@@ -1,20 +1,20 @@
-mysring = "ThiS is String with Upper and lower case Letters"
-alphabet = ["a","c","d","e","g","h","i","l","n","o","p","r","s","t","u","w"]
-
-def count (mystring,f_letter):
+string="ThiS is String with Upper and lower case Letters"
+alphabet=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+def count(string,find_letter):
     count=0
-    for letter in alphabet:
-        if (letter.lower()== f_letter.lower()):
+    for letter in string:
+        if letter.lower()==find_letter.lower():
             count+=1
     return count
+
 for letter in alphabet:
-    n=count(mystring,letter)
-    if (n>0):
-        print("{0} {3}".format(letter,n))
+    n=count(string,letter)
+    if n>0:
+        print("{0} {1}".format(letter,n))
 
+        
 
-
-
+# Bonus them cho a cach cach ba dao nay nua :v
 
 ##myString = ("ThiS is String with Upper and lower case Letters").lower().replace(" ","")
 ##print("a",myString.count('a'))
@@ -33,4 +33,3 @@ for letter in alphabet:
 ##print("t",myString.count('t'))
 ##print("u",myString.count('u'))
 ##print("w",myString.count('w'))
-
